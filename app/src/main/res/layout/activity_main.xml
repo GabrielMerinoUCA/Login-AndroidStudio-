@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgBack"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_main"
+        />
 
     <TextView
         android:id="@+id/tvUsuario"
@@ -14,9 +23,10 @@
         android:layout_marginTop="30dp"
         android:layout_marginRight="25dp"
         android:fontFamily="@font/jura"
+        android:textStyle="bold"
         android:text="Usuario"
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textSize="35sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,7 +53,8 @@
         android:fontFamily="@font/jura"
         android:text="Contraseña"
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textSize="35sp"
+        android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etUsuario" />
 
@@ -64,14 +75,16 @@
 
     <Button
         android:id="@+id/btnOk"
+        android:backgroundTint="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="35dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:layout_marginRight="35dp"
         android:text="Ingresar"
         android:textSize="30sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPwd" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
